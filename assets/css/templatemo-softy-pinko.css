@@ -27,7 +27,7 @@ Table of contents
 font & reset css
 --------------------------------------------- 
 */
-@import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 /* 
 ---------------------------------------------
 reset
@@ -43,6 +43,20 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+.mb-ico-image {
+  width: 15rem;
+  height: 15rem;
+  margin-top: 12px;
+  margin-bottom: 4rem;
+}
+
+.mb-prime-image {
+  width: 15rem;
+  height: 10rem;
+  margin-top: 12px;
+  margin-bottom: 4rem;
+}
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -50,6 +64,20 @@ figure, header, nav, section, article, aside, footer, figcaption {
   visibility: hidden;
   line-height: 0;
   height: 0;
+}
+
+.mb-txt {
+  font-size: 2rem;
+}
+
+.button-link a{
+  color: #0a0a0a;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #0a0a0a;
+  background: transparent;
+  border-radius: 20px;
 }
 
 .clearfix {
@@ -79,7 +107,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -109,7 +137,7 @@ global styles
 html,
 body {
   background: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 ::selection {
@@ -311,17 +339,19 @@ body {
 }
 
 a.main-button-slider {
-  font-size: 13px;
-  border-radius: 20px;
-  padding: 12px 20px;
-  background-color: #4655e0;
-  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
   color: #fff;
-  letter-spacing: 0.25px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  width: 350px;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 5px 10px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  background: transparent;
+  border-radius: 20px;
 }
 
 a.main-button-slider:hover {
@@ -644,7 +674,7 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner-bg.png);
+  background-image: url(../images/mb-bg-neworder.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 

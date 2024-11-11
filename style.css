@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #222222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container h2 {
+    color: #005dff;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #002668;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: black;
+}
+
+.benefits {
+    background-color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.benefits h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.benefit-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.benefit-item {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: calc(50% - 20px);
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-item h3 {
+    color: #2d72fc;
+    margin-bottom: 10px;
+}
+
+.benefit-item p {
+    color: #666;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+}
+
+.plans {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.plans h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.plans-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.plan {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    transform: translateY(-10px);
+}
+
+.plan.featured {
+    border-color: #ff9900;
+    background-color: #fff7e6;
+}
+
+.plan h3 {
+    color: #2d72fc;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.plan ul {
+    list-style: none;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+}
+
+.subscribe-button {
+    background-color: #002668;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.subscribe-button:hover {
+    background-color: black;
+
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.faq {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.faq h2 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.faq-item {
+    margin: 10px 0;
+    text-align: left;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.faq-question {
+    padding: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #2d72fc;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+    background-color: #1c50a7;
+}
+
+.faq-answer {
+    padding: 15px;
+    display: none;
+    color: #555;
+}
+
+/* Kontener dla responsywności */
+.container-top {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Nagłówek */
+.header-top {
+    background-color: #000a89;
+    background: url("https://static.wixstatic.com/media/2ec6e0_f83bf121447645d3833fd3c7e6d1f992~mv2.png/v1/fill/w_673,h_176,al_c,lg_1,q_85,enc_auto/2ec6e0_f83bf121447645d3833fd3c7e6d1f992~mv2.png");
+    color: white;
+    padding: 15px 0;
+    position: relative;
+}
+
+.logo a {
+    font-size: 1.8em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: black;
+}
+
+/* Przycisk CTA */
+.cta button {
+    background-color: #002668;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta button:hover {
+    background-color: black;
+}
+
+/* Menu mobilne */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: transform 0.3s ease;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #2d72fc;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .cta {
+        display: none;
+    }
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .plans-list {
+        flex-direction: column;
+    }
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .benefit-list {
+        flex-direction: column;
+    }
+}

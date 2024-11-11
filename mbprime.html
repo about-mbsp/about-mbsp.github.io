@@ -1,315 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <!-- MBSP.COM.PL/about --->
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="google-site-verification" content="dm91TzhX0gMHdR3WewF2_xyIbyH6aDnnjbfVSwZBsEU" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-    <title>MB Prime - MBSP.com.pl</title>
-<!--
-SOFTY PINKO
-https://templatemo.com/tm-535-softy-pinko
--->
-
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
-
-    <link rel="stylesheet" href="assets/css/templatemo-softy-pinko.css">
-
-    </head>
-    
-    <body>
-    
-        <div id="preloader-logo">
-        </div>   
-    <header class="header-area header-sticky">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png" alt="MB"/>
-                        </a>
-                        <ul class="nav">
-                            <li><a href="#welcome" class="active">Home</a></li>
-                            <li><a class="button-link" href="https://mbspshop.wixsite.com/net-pl">Przejdź na mbsp.com.pl</a></li>
-                            <li><a href="#pricing-plans">Cena</a></li>
-                            <li><a href="#blog">W liczbach</a></li>
-                        </ul>
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
-                    </nav>
-                </div>
-            </div>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MB Prime Status - MB&SP.com - Miły's Buy & Sell Parts</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="verfication-site/images/favicon.ico">
+</head>
+<body>
+    <section class="header-top">
+    <div class="container-top">
+        <!-- Logo -->
+        <div class="logo">
+            <a href="http://mbsp.com.pl/goprime"><img width="160px" src="https://static.wixstatic.com/media/2ec6e0_2d5c172a93f34054b1a6eda40e458220~mv2.png/v1/fill/w_320,h_180,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/mb-prime-logo.png"></a>
         </div>
-    </header>
-    <div class="welcome-area" id="welcome">
-        <div class="header-text">
-            <div class="container">
-                <div class="row">
-                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-                        <img src="assets/images/mbprime-ico.png" class="mb-prime-image">
-                        <p class="mb-txt">Więcej korzyści, więcej możliwości, tak... pro</p>
-                        <a href="#features" class="main-button-slider">Zobacz więcej</a>
-                    </div>
-                </div>
-            </div>
+
+        <!-- Nawigacja -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="http://mbsp.com.pl">Powrót na MBSP.com.pl</a></li>
+                <li><a href="http://mbsp.com.pl/about">O nas</a></li>
+                <li><a href="https://mbspshop.wixsite.com/net-pl/kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <!-- Przycisk CTA -->
+        <div class="cta">
+            <button onclick="showBenefits()">Dołącz teraz</button>
+        </div>
+
+        <!-- Menu mobilne -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
-    <section class="section padding-top-70 padding-bottom-0" id="features">
+</section>
+    <!-- Header -->
+    <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App">
+            <img src="https://static.wixstatic.com/media/2ec6e0_2d5c172a93f34054b1a6eda40e458220~mv2.png/v1/fill/w_320,h_180,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/mb-prime-logo.png">
+            <h2>Rozpocznij darmowy 14-dniowy okres próbny</h2>
+            <p>Dołącz do MB Prime i odkryj wyjątkowe korzyści, które czekają na naszych członków! Dzięki naszemu programowi </p>
+            <button class="cta-button" onclick="showBenefits()">Rozpocznij darmowy okres próbny</button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="benefits" id="benefits">
+        <div class="container">
+            <h2>Co oferuje MB Prime</h2>
+            <div class="benefit-list">
+                <div class="benefit-item">
+                    <h3>🛒 Darmowe dostawy</h3>
+                    <p>Bezpłatna dostawa od 100 zł lub na wybrane produkty.</p>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title" style="color: #fff;">Dostęp do ofert dla użytkowników MB Prime</h2>
-                    </div>
-                    <div class="left-text  box-container-div">
-                        
-                        <p>Przyłącz się do MB Prime i korzystaj z wyjątkowych ofert dostępnych tylko dla naszych członków
-                        </p>
-                    </div>
+                <div class="benefit-item">
+                    <h3>💎 Ekskluzywne oferty</h3>
+                    <p>Specjalne oferty tylko dla członków MB Prime.</p>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hr"></div>
+                <div class="benefit-item">
+                    <h3>⚡ Szybka dostawa</h3>
+                    <p>Dostawa w ciągu 1-2 dni roboczych.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>📞 Support 24/7</h3>
+                    <p>Całodobowa obsługa klienta, zawsze do Twojej dyspozycji.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section padding-top-70 padding-bottom-0" id="features">
+    <header class="header">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/headset.webp" class="rounded img-fluid d-block mx-auto" alt="App">
+            <h1 style="color: #005dff;">Wybierz swoje MB Prime</h1>
+            <h3>Ciesz się darmowym 14 dniowym okresem próbnym, a później wybierz plan</h3>        
+            <button class="cta-button" onclick="showBenefits()">Rozpocznij darmowy okres próbny</button>
+        </div>
+    </header>
+    <section class="plans">
+        <div class="container">
+            <h2>Nasze Plany Członkostwa</h2>
+            <div class="plans-list">
+
+                <!-- Plan miesięczny -->
+                <div class="plan">
+                    <h3>Plan Miesięczny</h3>
+                    <p class="price">4,99 zł / miesiąc</p>
+                    <ul>
+                        <li>🛒 Darmowa dostawa od 100 zł</li>
+                        <li>💎 Ekskluzywne oferty</li>
+                        <li>⚡ Szybka dostawa</li>
+                        <li>📞 Support 24/7</li>
+                    </ul>
+                    <button class="subscribe-button" onclick="subscribe()">Wybierz Plan</button>
                 </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title" style="color: #fff;">Piorytetowe wsparcie klienta</h2>
-                    </div>
-                    <div class="left-text  box-container-div">
-                        <p>
-                            Pisz do nas z każdym problemem, a my postaramy się odpowiedzieć jak najszybciej będzie to możliwe
-                        </p>
-                        
-                    </div>
+
+                <!-- Plan kwartalny -->
+                <div class="plan featured">
+                    <h3>Plan Kwartalny</h3>
+                    <p class="price">14,99 zł / 3 miesiące</p>
+                    <ul>
+                        <li>🛒 Darmowa dostawa od 100 zł</li>
+                        <li>💎 Ekskluzywne oferty</li>
+                        <li>⚡ Szybka dostawa</li>
+                        <li>📞 Support 24/7</li>
+                    </ul>
+                    <button class="subscribe-button" onclick="subscribe()">Wybierz Plan</button>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hr"></div>
+
+                <!-- Plan roczny -->
+                <div class="plan">
+                    <h3>Plan Roczny</h3>
+                    <p class="price">45,99 zł / rok</p>
+                    <ul>
+                        <li>🛒 Darmowa dostawa od 100 zł</li>
+                        <li>💎 Ekskluzywne oferty</li>
+                        <li>⚡ Szybka dostawa</li>
+                        <li>📞 Support 24/7</li>
+                    </ul>
+                    <button class="subscribe-button" onclick="subscribe()">Wybierz Plan</button>
                 </div>
+
             </div>
         </div>
     </section>
-    <section class="section padding-top-70 padding-bottom-0" id="features">
+     <!-- Sekcja FAQ -->
+    <section class="faq">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-md-12 col-sm-12 align-self-center" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <img src="assets/images/shipping-banner.webp" class="rounded img-fluid d-block mx-auto" alt="App">
-                </div>
-                <div class="col-lg-1"></div>
-                <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
-                    <div class="left-heading">
-                        <h2 class="section-title" style="color: #fff;">Darmowe Dostawy</h2>
-                    </div>
-                    <div class="left-text  box-container-div">
-                        <p>
-                            Ciesz się darmowymi dostawami na wybrane produkty
-                        </p>
-                        
-                    </div>
-                </div>
+            <h2>Najczęściej Zadawane Pytania</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(0)">1. Co to jest MB Prime?</div>
+                <div class="faq-answer">MB Prime to program członkowski oferujący darmowe dostawy, szybkie przesyłki i ekskluzywne oferty dla jego członków.</div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="hr"></div>
-                </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(1)">2. Jak mogę anulować członkostwo?</div>
+                <div class="faq-answer">Aby anulować członkostwo, przejdź do strony <a href="https://mbspshop.wixsite.com/net-pl/kontakt">kontakt</a>  i w temacie wybierz opcję "Anuluj członkostwo MB Prime".</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(2)">3. Czy mogę wypróbować MB Prime za darmo?</div>
+                <div class="faq-answer">Tak, oferujemy darmowy okres próbny, aby zapoznać się z korzyściami płynącymi z członkostwa MB Prime. Będzie aktywny przez 14 dni a darmową dostawę możesz wykorzystać do 1 zamówienia w okresie próbnym.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(3)">4. Regulamin usługi</div>
+                <div class="faq-answer"><a href="https://mbnsp.github.io/support/mbprimerules-pl.html">Regulamin</a></div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(4)">5. Co się stanie jak minie okres próbny?</div>
+                <div class="faq-answer"><p>Poinformujemy Cię mailowo, 4 dni przed, że zaraz minie czas. Podeślemy też link do płatności, gdzie wybierzesz jaki plan wybierzesz i formularz gdzie podasz na jaki okres.</p></div>
             </div>
         </div>
     </section>
 
-
-    <section class="mini" id="work-process">
-    </section>
-    
-    <section class="section colored" id="pricing-plans">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="center-heading">
-                        <h2 class="section-title" style="padding-top: 40px;">Oferty MB Prime </h2>
-                    </div>
-                </div>
-                <div class="offset-lg-3 col-lg-6">
-                    <div class="center-text">
-                        <p>Wybierz pasujacy plan. Każdy z planów zostanie przypisany na jedno konto</p>
-                        
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
-                    <div class="pricing-item">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">MB Prime</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency">zł</span>
-                                <span class="price">4.99</span>
-                                <span class="period">miesięcznie</span>
-                            </div>
-                            <ul class="list">
-                                <li class="active">Szybka dostawa</li>
-                                <li class="active">Częste zniżki</li>
-                                <li class="active">Specjalne oferty</li>
-                                <li class="active">Obsługa piorytetowa</li>
-                            </ul><br><br><br>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="https://mbspshop.wixsite.com/net-pl/gopremium" class="main-button">Kup teraz</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
-                    <div class="pricing-item active">
-                        <div class="pricing-header">
-                            <h3 class="pricing-title">MB Prime</h3>
-                        </div>
-                        <div class="pricing-body">
-                            <div class="price-wrapper">
-                                <span class="currency">zł</span>
-                                <span class="price">49.99</span>
-                                <span class="period">rocznie</span>
-                            </div>
-                            <ul class="list">
-                                <li class="active">Szybka dostawa</li>
-                                <li class="active">Częste zniżki</li>
-                                <li class="active">Specjalne oferty</li>
-                                <li class="active">Obsługa piorytetowa</li>
-                                <br><br>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="https://mbspshop.wixsite.com/net-pl/gopremium" class="main-button">Kup teraz</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p>&copy; 2024 Miły's Buy & Sell Parts.com, Ind. Wszelkie prawa zastrzeżone.</p>
+            <a href="http://mbsp.com.pl">Powrót na MBSP.com.pl</a>
+            <a href="https://mbnsp.github.io/support/mbprimerules-pl.html">Regulamin MB Prime</a>
         </div>
-    </section>
-    <!-- Our brands--><br><br><br><br><br><br><br><br>
-    <section class="counter">
-        <div class="content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-bottom">
-                            <strong>820</strong>
-                            <span>Produkty</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-top">
-                            <strong>721</strong>
-                            <span>Użytkowników</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item decoration-bottom">
-                            <strong>100</strong>
-                            <span>Użytkowników ze statusem Prime</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                        <div class="count-item">
-                            <strong>4</strong>
-                            <span>Języki</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section" id="blog">
-    </section>
-    <section class="section colored" id="contact-us">
-    </section>
-    <footer>
-        <div class="footer-items">
-            <ul>
-              <h3>The MB platform</h3>
-              <li><a href="http://mbsp.com.pl">MB Store Site</a></li>
-              <li><a href="http://mbsp.com.pl/ads">MB Ads</a></li>
-              <li><a href="http://mbsp.com.pl/milysoftware">Miły's Interactive Software</a></li>
-              <li><a href="htpp://mbsp.com.pl/goprime">MB Prime</a></li>
-              <li><a href="#">Copyright &copy; 2017-2024 Miły's Buy & Sell Parts.com, Ind. - Miłosz Boguniewicz</a>  <a href="https://about-mbsp.github.io/en.html">en </a> <a href="https://about-mbsp.github.io/">pl </a></li>
-            </ul>
-            <ul>
-              <h3>Media</h3>
-              <li><a href="https://www.facebook.com/the.boguniewicz.organization">Facebook</a></li>
-              <li><a href="https://twitter.com/IdeaMilos">X</a></li>
-              <li><a href="https://www.instagram.com/mbspshopco/">Instagram</a></li>
-              <li><a href="https://www.youtube.com/channel/UC8caUwTPX5WYWEVxDEE1GGQ">YouTube</a></li>
-            </ul>
-            <ul>
-                <h3>MB Tech Support</h3>
-                <li><a href="http://mbsp.com.pl/support">Tech Support page</a></li>
-                <li><a href="https://mbnsp.github.io/support/how_to_order-en.html">How to order</a></li>
-                <li><a href="https://mbnsp.github.io/support/terms.html">Terms & conditions</a></li>
-                <li><a href="https://mbnsp.github.io/support/refund-en.html">Refunds</a></li>
-              </ul>
-              <ul>
-                <h3>About MB</h3>
-                <li><a href="http://mbsp.com.pl/about">About MB</a></li>
-                <li><a href="http://mbsp.com.pl/milysoftware">Our software</a></li>
-                <li><a href="https://about-mbsp.github.io/contact-mb.html">Contact MB for Business</a></li>
-                <li><a href="https://mbspshop.wixsite.com/net-pl/kwestie-prawne">MB&SP.com Site Rules</a></li>
-              </ul>
-          </div>
     </footer>
-    <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
 
-    <!-- Bootstrap -->
-    <script src="assets/js/popper.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Plugins -->
-    <script src="assets/js/scrollreveal.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    
-    <!-- Global Init -->
-    <script src="assets/js/custom.js"></script>
-
-    <script>
-
-        
-        var loader = document.getElementById("preloader-logo");
-
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-     
-    </script>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>

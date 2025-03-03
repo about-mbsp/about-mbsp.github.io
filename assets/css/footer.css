@@ -1,0 +1,129 @@
+    /* Global Styles */
+
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column h3 {
+    color: #0c61c2;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #0c61c2;
+    position: relative;
+}
+
+.footer-column ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0c61c2;
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.footer-column ul li a:hover::after {
+    width: 100%;
+}
+
+.beta {
+    background-color: #FFD700;
+    color: black;
+    font-size: 12px;
+    padding: 2px 4px;
+    margin-left: 5px;
+    border-radius: 3px;
+}
+
+/* Secure Shopping Badge */
+.footer-badge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-badge img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.footer-badge p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .footer-badge {
+        grid-column: span 2;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer-badge {
+        grid-column: span 1;
+        margin-top: 15px;
+    }
+}
